@@ -1,0 +1,5 @@
+#ignore all test files
+test.md
+
+#folders go here...
+node_modules
