@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: inherit;
+}
+.heading__section {
+  width: 100%;
+}
+.heading__primary {
+  text-align: center;
+  padding-top: 20rem;
+  font-size: 7.6rem;
+  font-weight: 100;
+  animation: moveRight 0.5s ease;
+}
+.heading__primary--modi {
+  background-image: linear-gradient(
+    to left,
+    rgba(109, 59, 252),
+    rgba(109, 59, 252, 0.15)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+}
+.heading__primary--modi:hover {
+  transform: skewY(2deg) skewX(15deg);
+}
+/* some animations */
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
